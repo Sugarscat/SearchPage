@@ -18,9 +18,10 @@ body{
 
 .search{
     position: relative;
-    width: 40%;
+    width: 50%;
     height: 44px;
-    min-width: 400px;
+    min-width: 500px;
+    max-width: 600px;
     background: #303134;
     color: grey;
     transition: 0.5s;
