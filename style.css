@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #202124;
+    min-width: 1000px;
+    min-height: 500px;
+}
+
+.search{
+    position: relative;
+    width: 40%;
+    height: 44px;
+    min-width: 400px;
+    background: #303134;
+    color: grey;
+    transition: 0.5s;
+    border-radius: calc(0.5 * 44px);
+    box-shadow: 2px 2px 6px 2px #1A1B1C;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button{
+    background: rgba(0,0,0,0);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.search input{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    padding-inline-end: 44px;
+    padding-inline-start: 52px;
+    /*position: relative;*/
+    width: 100%;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+.searchEngines{
+    padding: 20px;
+}
+
+.searchEngines ul{
+    display: flex;
+    list-style: none;
+}
+
+.searchEngines li{
+    padding: 10px;
+}
+
+.searchEngines button{
+    color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.active {
+    background-color: #303134 !important;
+    border: 1px solid white !important;
+}
+
+input[type='radio']{
+    display: none;
+}
+
+/* --谷歌浏览器下的 search 叉号  */
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: url("img/clear.png") no-repeat center;
+    background-size: 100% 100%;
+    color:rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+/* --IE下的 search 叉号  */
+input[type=search]::-ms-clear {
+    appearance: none;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: url("img/clear.png") no-repeat center;
+    background-size: 100% 100%;
+    color:rgba(0,0,0,0);
+    cursor: pointer;
+}
